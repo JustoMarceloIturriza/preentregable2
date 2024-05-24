@@ -1,0 +1,270 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+/*Estilos generales*/
+
+body {
+    background-color: #E6E6DD ;
+    color: black;
+
+}
+
+/*Estilos del header*/
+
+.encabezadoprincipal {
+    height: 100px;
+    background-color: white;
+
+     /*flex*/
+     display: flex;
+     justify-content:space-around;
+     align-items: center;
+
+}
+
+.encabezadoprincipal h1 {
+    text-transform:inherit;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-size: 2.5rem;
+}
+
+.encabezadoprincipal h1 span {
+    color: blue;
+}
+
+.encabezadoprincipal li {
+    list-style-type: none;
+    display:inline-block;
+}
+
+.encabezadoprincipal nav ul li a {
+    text-decoration: none;
+    margin: 20px;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-size:large;
+}
+
+/*Indumentaria*/
+
+.indumentaria {
+    text-align: center;
+    margin: 10vh;
+    border-bottom: 1px solid black;
+}
+
+.indumentaria img { 
+    height: calc(120vh - 120px);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 50px;
+    gap: 30px;
+    align-items: center   
+}
+
+.indumentaria h2 {
+    color: black;
+    text-transform: uppercase;
+    font-size: 3rem;
+
+}
+
+.indumentaria p {
+    font-size: larger;
+    color: black;
+    padding: 5px;
+}
+
+.indumentaria p span {
+    display: inline-block;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: brown;
+}
+
+/*Estilos del main*/
+.contenedorIndumentaria {
+    display: grid;
+    grid-template-columns: repeat(3, 1rf);
+    gap: 20px;
+}
+
+.indumentarias {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.dress {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+}
+
+.dress img {
+    max-width: 100%;
+}
+
+.dress p span{
+    color: brown;
+    font-family:cursive;
+}
+.dress p {
+    margin: 10px 0;
+}
+
+/*Estilos del Footer*/
+
+.footer {
+    background-color: #212121;
+    color: white;
+    padding: 20px 0;
+    
+}
+
+.footerinformacion {
+    display: flex;
+    justify-content:space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    
+}
+
+.footer h3 {
+    font-size: large;
+    margin-bottom: 10px;
+}
+
+.infoContacto {
+    margin: 5px 0px;
+    font-size:medium;
+}
+
+
+/*Para hacerlo responsive*/
+
+@media (max-width:1023px){
+    
+    .encabezadoprincipal{
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.indumentaria{
+    margin: 5vh;
+    font-size: 2rem;
+}
+
+.indumentaria h2 .indumentaria p{
+    font-size: inherit;
+}
+
+.contenedorIndumentaria{
+    grid-template-columns: 1fr 1fr;
+}
+
+.footerinformacion{
+    flex-direction: column;
+    text-align: center;
+}
+
+/*Movil*/
+
+@media (max-width:768px) {
+
+    .contenedorIndumentaria{
+        grid-template-columns: 1fr;
+    }
+
+}
+    
+/*Estilos para hombre*/
+
+main .textoshom{
+    text-align: center;
+}
+section{
+    margin: 0px 60px;
+    padding: 30px;
+    background-color: #E6E6DD;
+    color: black;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+section div{
+    text-align:center;
+    margin: 10px;
+}
+
+section div img{
+    width: 80%;
+}
+
+/*Estilos para mujer*/
+
+main .textosmuj{
+    text-align: center;
+}
+
+section{
+    margin: 0px 60px;
+    padding: 30px;
+    background-color: #E6E6DD;
+    color: black;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+section div{
+    text-align: center;
+    margin: 10px;
+}
+
+section div img{
+    width: 80%;
+}
+
+
+/*Estilos para accesorios*/
+
+main .textosacces{
+    text-align: center;
+}
+
+/*Estilos para promos*/
+
+.white-bg{
+    background-color: white;
+}
+
+main .row{
+    text-align: center;
+}
+
+main p span{
+    display: inline-block;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: tomato;
+}
